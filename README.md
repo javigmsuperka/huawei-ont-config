@@ -8,6 +8,17 @@ Programa para Windows que extrae el **IdONT y el serial óptico de tu Askey WiFi
 
 Descarga `HuaweiONTConfig-0.2.1-Windows.zip`, descomprímelo y abre `HuaweiONTConfig.exe`. No necesitas instalar Python. El ejecutable no está firmado digitalmente.
 
+### Si Windows 11 bloquea el programa
+
+El **Control inteligente de aplicaciones** puede impedir que se ejecute esta aplicación porque el ejecutable no está firmado. Si te aparece ese bloqueo, para utilizar este ejecutable tendrás que desactivar esa función:
+
+1. Abre **Inicio → Seguridad de Windows**.
+2. Entra en **Control de aplicaciones y navegador**.
+3. Abre **Configuración de Control inteligente de aplicaciones**.
+4. Selecciona **Desactivado** y confirma.
+
+**No es necesario hacerlo si el programa ya abre.** Desactivar esta función reduce la protección para todo el equipo, no solo para esta aplicación. En versiones antiguas de Windows, volver a activarla puede requerir restablecer o reinstalar Windows; las actualizaciones recientes permiten reactivarla sin una instalación limpia. Consulta la [información de Microsoft](https://support.microsoft.com/es-es/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions) antes de cambiarla.
+
 ## Equipos utilizados
 
 - **Askey:** en la pegatina pone **RTF8317VW-D1-SX**; en su web aparece **RTF8317VW-SX**. Es la misma unidad.
