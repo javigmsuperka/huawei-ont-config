@@ -27,7 +27,7 @@ No recorta el IdONT a los 14 caracteres que muestra la pantalla: conserva los 20
 
 Puedes hacerlo por etapas: primero conecta el PC al Askey y extrae; después, sin cerrar la aplicación, conecta el PC a la Huawei y ajusta la IP de esa conexión si hace falta. Los datos extraídos permanecen en memoria. Pulsa Leer ONT y Revisar cambio antes de Aplicar. No necesitas tener ambos equipos conectados a la vez.
 
-La extracción se ha probado en un Askey `RTF8317VW-SX` con firmware `GL_g1.18_R8316_V2.19`. Solo se admite la estructura web de esta familia; si el modelo, formato o valores GPON/XGS no encajan, se detiene en vez de adivinar. Un Askey en modo GPON no se importa automáticamente en esta configuración de referencia XGS-PON. No se cambia su tecnología de fibra.
+El Askey probado indica **RTF8317VW-D1-SX en la pegatina** y **RTF8317VW-SX en su web**, con firmware `GL_g1.18_R8316_V2.19`. Son dos denominaciones de la misma unidad; no se deduce el modelo por el nombre del firmware. Las otras variantes Askey y el MitraStar no se han probado. Solo se admite la estructura web de esta familia; si el modelo, formato o valores GPON/XGS no encajan, se detiene en vez de adivinar. Un Askey en modo GPON no se importa automáticamente en esta configuración de referencia XGS-PON. No se cambia su tecnología de fibra.
 
 El cliente Askey tiene una lista cerrada de peticiones permitidas. No permite `cbSet*`, guardar configuración, cambiar modos, reiniciar ni cargar firmware.
 
@@ -72,7 +72,7 @@ Si el equipo deja de responder tras una escritura, la aplicación no reintenta n
 ## Validación de esta versión
 
 - 42 pruebas automáticas con datos inventados: conversión, cookies, lectura, validación de destino, confirmación, cambios concurrentes, fallo de copia, rechazo de escritura, conservación de XGS, guardado después de lectura, restauración y confirmación en la interfaz.
-- Prueba real de extracción contra un Askey RTF8317VW-SX conectado a un laboratorio aislado en PVE1: inicio de sesión, IdONT, serial, coincidencia con la extracción original y cierre de sesión. Cero peticiones de configuración.
+- Prueba real de extracción contra un Askey RTF8317VW-D1-SX (pegatina), identificado como RTF8317VW-SX en su web, conectado a un laboratorio aislado en PVE1: inicio de sesión, IdONT, serial, coincidencia con la extracción original y cierre de sesión. Cero peticiones de configuración.
 - Prueba real contra una HN8010Ts-20 2D62.A con S510: autenticación, lectura de los parámetros, coincidencia con los datos del Askey, copia DPAPI y simulación sin cambios. No se enviaron escrituras ni guardados en esa prueba real.
 - La secuencia de escritura se basa en las peticiones usadas durante la configuración original de esa instalación. El ejecutable nuevo no ha sido validado aplicando valores distintos contra una ONT de pruebas desconectada de producción. Antes de publicarlo como solución general, falta esa validación y comparar con otras líneas/OLT.
 

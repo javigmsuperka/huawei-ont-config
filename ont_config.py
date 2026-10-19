@@ -17,7 +17,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 AUTH = "/html/amp/ontauth/passwordcommon.asp"
 DEVICE = "/html/ssmp/deviceinfo/deviceinfocut.asp"
 XGS = "/html/amp/ontauth/xgponauth_func.asp"

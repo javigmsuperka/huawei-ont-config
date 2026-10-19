@@ -24,12 +24,23 @@ Consulta [las instrucciones completas](LEEME.md), incluidos los formatos de los 
 
 | Función | Referencia probada o admitida |
 |---|---|
-| Extracción Askey real | RTF8317VW-SX, firmware GL_g1.18_R8316_V2.19 |
+| Extracción Askey real | Pegatina: **RTF8317VW-D1-SX** · Web del equipo: **RTF8317VW-SX** · Firmware: GL_g1.18_R8316_V2.19 |
 | Lectura Huawei real | HN8010Ts-20, hardware 2D62.A, firmware V5R022C00S510 |
 | Escritura admitida por el programa | HN8010Ts-20 / 2D62.A / V5R022C00S462 o V5R022C00S510 |
 | Sistema | Windows con interfaz gráfica; Python 3.12 o posterior para el código fuente |
 
-El lector Askey reconoce la estructura de la familia RTF8316/8317, pero eso no significa que todas sus variantes estén probadas. Comprueba XGS-PON y la correspondencia entre los parámetros GPON/XGS; si el formato no coincide, detiene la importación.
+El equipo usado en las pruebas es el **Askey RTF8317VW-D1-SX**, según su pegatina; su web devuelve **RTF8317VW-SX**. Son las dos denominaciones observadas en la misma unidad. La cadena `R8316` del firmware no se utiliza para deducir el modelo.
+
+| Fabricante | Modelo de la pegatina | Pruebas con esta aplicación |
+|---|---|---|
+| Askey | RTF8316VW | No probado |
+| Askey | RTF8317VW-D1 | No probado |
+| Askey | **RTF8317VW-D1-SX** | **Extracción real probada**; su web indica RTF8317VW-SX |
+| Askey | RTF8317VW-D2 | No probado |
+| Askey | RTF8317VW-D2-SX | No probado |
+| MitraStar | GPT-6841JL4L4-v11 | No probado; lector no implementado |
+
+El lector Askey reconoce la estructura de la familia RTF8316/8317, pero eso no significa que todas sus variantes estén probadas o admitidas por el validador. Comprueba XGS-PON y la correspondencia entre los parámetros GPON/XGS; si el formato no coincide, detiene la importación.
 
 ## Qué hace
 

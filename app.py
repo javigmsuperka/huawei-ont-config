@@ -70,6 +70,7 @@ class App:
         root.pack(fill="both", expand=True)
         root.columnconfigure(1, weight=1)
         ttk.Label(root, text="Askey Movistar", font=("Segoe UI", 18, "bold")).grid(row=0, column=0, columnspan=3, sticky="w")
+        ttk.Label(root, text="Equipo probado · Pegatina: RTF8317VW-D1-SX · Web: RTF8317VW-SX").grid(row=0, column=0, columnspan=3, sticky="e")
         source_actions = ttk.Frame(root)
         source_actions.grid(row=1, column=0, columnspan=3, sticky="w", pady=(8, 10))
         self.askey_button = ttk.Button(source_actions, text="Leer datos del Askey…", command=self.import_askey)
