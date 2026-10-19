@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.hnont
+build/
+dist/
+dist-*/
+*.spec
+VALIDACION_REAL.json
+VALIDACION_ASKEY_REAL.json
+private/
+*.log
+*.zip
