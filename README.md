@@ -39,6 +39,12 @@ La extracción no modifica la configuración del Askey.
 
 ### 2. Configurar la Huawei
 
+**Dónde va el IdONT:** en la configuración probada, el IdONT de Movistar se guarda en el parámetro interno **`X_HW_PonHexPassword`** de la Huawei. El programa lo escribe ahí aunque el panel web no muestre ese parámetro como un campo editable.
+
+- **No va en `XGS Registration ID`**: es otro parámetro de autenticación; el programa no lo modifica.
+- **No es el `ONT ID` de la pantalla de estado**: ese número lo asigna la OLT durante el registro. No es el IdONT de tu línea ni un campo donde debas pegarlo.
+- El **serial óptico PON** es un dato distinto y se configura en `X_HW_PonSN`.
+
 1. Conecta el PC por Ethernet a la Huawei. No hace falta mantener el Askey conectado.
 2. Si la Huawei usa `192.168.100.1`, configura en esa tarjeta del PC la IP `192.168.100.10`, máscara `255.255.255.0` y deja puerta de enlace y DNS vacíos. Usa otra dirección si lo indica la etiqueta de tu ONT.
 3. En el apartado **ONT**, introduce su IP, usuario y contraseña de administración. Pulsa **1 Leer ONT**.

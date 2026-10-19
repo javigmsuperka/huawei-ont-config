@@ -38,6 +38,8 @@ El cliente Askey tiene una lista cerrada de peticiones permitidas. No permite `c
 | `X_HW_PonHexPassword` | IdONT de Movistar en hexadecimal |
 | `X_HW_PonSN` | Serial óptico, solo si solicitas cambiarlo |
 
+**IdONT y nombre del campo no son lo mismo:** el IdONT es el dato de autenticación de Movistar; `X_HW_PonHexPassword` es el parámetro interno de la Huawei donde lo guardamos en esta configuración. No se introduce en `XGS Registration ID`. Tampoco debe confundirse con el `ONT ID` numérico de la pantalla de estado, que asigna la OLT durante el registro y no es el IdONT de tu línea. El programa accede al parámetro interno aunque el panel no lo ofrezca como campo editable.
+
 No modifica `XGS Registration ID`, LOID, autenticación mutua, MAC, VLAN, PPPoE, firmware ni ajustes del router. La existencia de O5 no demuestra que el servicio de Internet esté aprovisionado.
 
 La escritura está limitada a **HN8010Ts-20, hardware 2D62.A, firmware V5R022C00S462 o V5R022C00S510**. Otros modelos o versiones no están admitidos para escritura. La lectura depende de que expongan la misma estructura web.
